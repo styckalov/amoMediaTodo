@@ -12,7 +12,7 @@ export default function ConfirmModal({id, removeTodo, closeModal}: ConfirmModalI
             <div className="confirmModal__buttons">
                 <button className="confirmModal__okButton" onClick={() => removeTodo(id)}>OK</button>
                 {console.log(id)}
-                <button className="confirmModal__cancelButton" onClick={() => closeModal()}>Cancel</button>
+                <button className="confirmModal__cancelButton" onClick={closeModal}>Cancel</button>
             </div>
         </div>
     )

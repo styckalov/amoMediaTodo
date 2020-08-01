@@ -1,16 +1,12 @@
 .todoItem {
     border-top: 1px solid black;
     font-size: 20px;
+    display: flex;
     &__text {
         color: #00D4FF;
         &__done {
             color: black;
         }
-    }
-    &__inner {
-        padding: 0 10px 0;
-        display: flex;
-        align-items: center;
     }
     p {
         margin: 10px 0;
@@ -29,6 +25,6 @@
     border: none;
     border-radius: 5px;
     color: white;
-    margin-left: 10px;
+    margin: 10px 0 0 10px;
 }
 
