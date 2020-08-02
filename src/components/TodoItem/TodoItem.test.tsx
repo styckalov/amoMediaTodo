@@ -23,4 +23,26 @@ describe('<TodoItem/>', () => {
         );
         expect(shallowToJson(output)).toMatchSnapshot();
     })
+    it('Should handle click event', () => {
+        const openModalMock = jest.fn()
+        const passIdMock = jest.fn();
+        const output = shallow(
+            <TodoItem
+                todo=
+                {
+                    {
+                        id: 100,
+                        name: "mockName",
+                        isDone: true
+                    }
+                }
+                passId={passIdMock}
+                openModal={openModalMock}
+                handleTodoClick={() => { }}
+            />
+        );
+        output.find('.todoItem__button').simulate('click');
+        expect(openModalMock).toHaveBeenCalled()
+        expect(passIdMock).toHaveBeenCalled()
+    })
 })
