@@ -14,9 +14,10 @@
 
 .todoList__confirmModal {
     display: flex;
-    position: absolute;
-    top: 20%;
-    left: 41%;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
